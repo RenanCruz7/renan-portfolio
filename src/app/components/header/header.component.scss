@@ -1,0 +1,40 @@
+@import '../../../assets/styles/global.scss';
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $secundary;
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: $primary;
+    }
+  
+    .navbar {
+      a {
+        text-decoration: none;
+        margin-left: 20px;
+        color: $primary;
+  
+        &:hover {
+          color: #62496a;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+  
+      .navbar {
+        a {
+          display: block;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
