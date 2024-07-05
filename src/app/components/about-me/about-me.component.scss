@@ -1,0 +1,32 @@
+@import '../../../assets/styles/global.scss';
+
+.about{
+    display: flex;
+    justify-content: center; // Centraliza horizontalmente
+    align-items: center; // Centraliza verticalmente
+    background-color: $secundary;
+    height: 700px;
+
+    // Media query para telas menores (ex: tablets)
+    @media (max-width: 768px) {
+        flex-direction: column; // Muda a direção do flex para coluna para melhor acomodar o espaço vertical
+        height: auto; // Ajusta a altura para auto para acomodar o conteúdo
+        padding: 20px; // Adiciona um pouco de padding para não ficar muito apertado
+    }
+}
+
+.main-text{
+    background-color: inherit;
+    color: $primary;
+    font-size: 4rem;
+
+    // Media query para telas menores (ex: tablets)
+    @media (max-width: 768px) {
+        font-size: 3rem; // Diminui a fonte para se adequar a telas menores
+    }
+
+    // Media query para telas muito pequenas (ex: celulares)
+    @media (max-width: 480px) {
+        font-size: 1.5rem; // Diminui ainda mais a fonte para se adequar a telas de celulares
+    }
+}
