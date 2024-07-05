@@ -3,20 +3,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: $secundary;
+    padding: 10px;
+    background-color: $primary;
   
     .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 45px; // Ajuste o tamanho conforme necessário
+        height: 45px; // Mantenha igual à largura para um círculo perfeito
+        border-radius: 50%; // Isso cria o efeito redondo
+        object-fit: cover; // Isso garante que a imagem cubra o espaço sem distorcer
+      }
+
       font-size: 24px;
       font-weight: bold;
-      color: $primary;
+      color: $secundary;
     }
   
     .navbar {
       a {
         text-decoration: none;
         margin-left: 20px;
-        color: $primary;
+        margin-right: 10px;
+        color: $secundary;
   
         &:hover {
           color: #62496a;
