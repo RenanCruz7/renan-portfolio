@@ -6,7 +6,7 @@
     align-items: center; // Centraliza verticalmente
     flex-direction: column;
     background-color: $secundary;
-    height: 700px;
+    height: 650px;
 
     // Media query para telas menores (ex: tablets)
     @media (max-width: 768px) {
