@@ -1,0 +1,25 @@
+.main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+
+/* Estilos adicionais para garantir responsividade */
+@media screen and (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Empilha os itens em dispositivos menores */
+        grid-gap: 5rem; /* Reduz o espaço entre os itens para telas menores */
+    }
+}
+
+.about-content-main{
+    margin-top: 15px;
+    line-height: 1.7;
+    font-size: 1.3rem;
+}
