@@ -87,4 +87,15 @@
         }
     }
 }
+.social-icon {
+    // Ajuste o tamanho do ícone para telas menores
+    @media (max-width: 768px) {
+        font-size: 24px; // Diminui o tamanho do ícone para tablets
+    }
+
+    @media (max-width: 480px) {
+        font-size: 20px; // Diminui ainda mais para celulares
+    }
+}
+
 

@@ -1,3 +1,5 @@
+@import '../../../assets/styles/global.scss';
+
 .main-container {
     max-width: 120rem;
     margin: auto;
@@ -10,6 +12,11 @@
     grid-gap: 10rem;
 }
 
+.about-content-description{
+    margin-top: 25px;
+    color: $secundary;
+}
+
 /* Estilos adicionais para garantir responsividade */
 @media screen and (max-width: 768px) {
     .about-content {
@@ -18,8 +25,58 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .about-content {
+        grid-gap: 2rem; /* Reduz ainda mais o espaço entre os itens para telas de celular */
+    }
+    
+    .about-content-main, .btn {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas de celular */
+    }
+    
+    .btn {
+        padding: 8px 16px; /* Ajusta o padding dos botões para telas de celular */
+    }
+    }
+
 .about-content-main{
     margin-top: 15px;
     line-height: 1.7;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
+.btn {
+    color: $secundary;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid $secundary;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 30px;
+  }
+  
+  .btn:hover {
+    color: purple;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
