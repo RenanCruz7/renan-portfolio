@@ -17,6 +17,30 @@
     color: $secundary;
 }
 
+.about-content-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; // Espaço entre cada grupo de habilidades
+}
+
+.skill-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; // Espaço entre os ícones das habilidades
+
+    p {
+        width: 100%; // Faz o título ocupar a largura total, forçando os ícones a começarem em uma nova linha
+        margin: 10px 0; // Espaço acima e abaixo do título da categoria
+        color: $secundary;
+    }
+
+    img {
+        height: 40px; // Altura dos ícones, ajuste conforme necessário
+        width: auto; // Mantém a proporção dos ícones
+    }
+}
+
 /* Estilos adicionais para garantir responsividade */
 @media screen and (max-width: 768px) {
     .about-content {
@@ -42,7 +66,7 @@
 .about-content-main{
     margin-top: 15px;
     line-height: 1.7;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .btn {
     color: $secundary;
