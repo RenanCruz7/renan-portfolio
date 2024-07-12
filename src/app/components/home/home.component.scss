@@ -6,7 +6,7 @@
     align-items: center; // Centraliza verticalmente
     flex-direction: column;
     background-color: $secundary;
-    height: 650px;
+    height: 700px;
 
     // Media query para telas menores (ex: tablets)
     @media (max-width: 768px) {
@@ -55,7 +55,6 @@
     margin-top: 40px;
     font-size: 1.2rem;
 }
-
 
 
 .socials {
