@@ -1,11 +1,18 @@
 @import '../../../assets/styles/global.scss';
 
-.teste {
+.exp-text{
+  text-align: center; 
+  margin: 30px;
+  color: $secundary;
+  font-size: 1.4rem;
+}
+
+.timeline {
     margin: 0;
     font-family: 'Droid Sans', sans-serif;
     position: relative; // Isso permite que o pseudoelemento :before seja posicionado relativamente a .teste
-    min-height: 100vh; // Ajuste conforme necessário para o seu caso específico
-
+    min-height: 25vh; // Ajuste conforme necessário para o seu caso específico
+    margin-bottom: 30px;
     &:before {
       content: '';
       position: absolute; // Alterado de fixed para absolute
@@ -59,7 +66,7 @@
       .body {
         color:$secundary;
         p {
-          line-height:1.4em;
+          line-height:1.1em;
         }
       }
       &:nth-child(2n) {
