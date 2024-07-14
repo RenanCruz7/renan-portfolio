@@ -38,6 +38,11 @@
     img {
         height: 40px; // Altura dos ícones, ajuste conforme necessário
         width: auto; // Mantém a proporção dos ícones
+        transition: 0.3s;
+    }
+
+    &:hover img{
+        transform: translateY(-5px); // Move o card 10px para cima
     }
 }
 

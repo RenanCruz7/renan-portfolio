@@ -32,12 +32,16 @@
     left:-5px;
     .entry {
       width:calc(50% - 80px);
-      float:left; 
+      float:left;
+      transition: 0.3s;
       padding:20px;
       clear:both;
       text-align:right;
       &:not(:first-child) {
         margin-top:-60px;
+      }
+      &:hover{
+        transform: translateY(-5px); // Move o card 10px para cima
       }
       .title {
         font-size:32px;
