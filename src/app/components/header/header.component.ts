@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    section?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
