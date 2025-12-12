@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
 import { HomeComponent } from './components/home/home.component';
@@ -14,5 +14,5 @@ import { ProjectsComponent } from "./components/projects/projects.component";
     imports: [RouterOutlet, HeaderComponent, HomeComponent, AboutMeComponent, ExperienceComponent, ProjectsComponent]
 })
 export class AppComponent {
-  title = 'renan-portfolio';
+  title = signal('renan-portfolio');
 }

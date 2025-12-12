@@ -1,4 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+
+interface Experience {
+  company: string;
+  position: string;
+  period: string;
+  description: string;
+  technologies: string[];
+}
 
 @Component({
   selector: 'app-experience',
@@ -8,5 +16,6 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
-
+  experiences = signal<Experience[]>([]);
+  isLoading = signal(false);
 }

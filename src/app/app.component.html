@@ -1,5 +1,21 @@
 <app-header></app-header>
+
 <app-home></app-home>
-<app-about-me></app-about-me>
-<app-experience></app-experience>
-<app-projects></app-projects>
+
+@defer (on viewport) {
+  <app-about-me></app-about-me>
+} @placeholder {
+  <div class="loading-placeholder">Carregando...</div>
+}
+
+@defer (on viewport) {
+  <app-experience></app-experience>
+} @placeholder {
+  <div class="loading-placeholder">Carregando...</div>
+}
+
+@defer (on viewport) {
+  <app-projects></app-projects>
+} @placeholder {
+  <div class="loading-placeholder">Carregando...</div>
+}
