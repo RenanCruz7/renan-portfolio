@@ -1,45 +1,80 @@
-<div id="projects" class="container">
-    <div class="card">
-        <div class="card-content">
-            <h2 class="project-title">SpringBoot Blog </h2>
-            <p class="tech-used">Tecnologies: Java, SpringBoot, MySQL</p>
-            <a href="https://github.com/RenanCruz7/Spring-Boot-Blog" class="github-link" target="_blank">GitHub</a>
+<section id="projects" class="py-24 px-6 bg-terminal-bg text-terminal-text border-b-2 border-terminal-text">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-extrabold mb-12 text-center text-terminal-accent uppercase tracking-tight">{{ translate('projects.title') }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="bg-terminal-bg p-6 border-2 border-terminal-text hover:border-terminal-accent transition-colors flex flex-col justify-between h-full group">
+        <div>
+          <h3 class="text-xl font-bold text-terminal-text mb-2 group-hover:text-terminal-accent transition-colors">SPRINGBOOT_BLOG</h3>
+          <p class="text-xs text-white mb-6 leading-relaxed">
+            {{ translate('projects.tech') }} Java, SpringBoot, MySQL
+          </p>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="project-title">Microserviços em Java</h2>
-            <p class="tech-used">Tecnologies: Java,SpringBoot, Eureka Server, Eureka Client</p>
-            <a href="https://github.com/RenanCruz7/Microservico-em-Java" class="github-link" target="_blank">GitHub</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="project-title">Football Manager API</h2>
-            <p class="tech-used">Tecnologies: Java, SpringBoot, MySQL</p>
-            <a href="https://github.com/RenanCruz7/Football-Manager-API" class="github-link" target="_blank">GitHub</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="project-title">Acessibilidade Angular</h2>
-            <p class="tech-used">Tecnologies: Angular</p>
-            <a href="https://github.com/RenanCruz7/Acessibilidade-angular" class="github-link" target="_blank">GitHub</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="project-title">Testes em Angular</h2>
-            <p class="tech-used">Tecnologies: Angular, Jasmine, Karma</p>
-            <a href="https://github.com/RenanCruz7/testes-angular" class="github-link" target="_blank">GitHub</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="project-title">Angular Rxjs</h2>
-            <p class="tech-used">Tecnologies: Angular, Rxjs</p>
-            <a href="https://github.com/RenanCruz7/angular-rxjs" class="github-link" target="_blank">GitHub</a>
-        </div>
-    </div>
+        <a href="https://github.com/RenanCruz7/Spring-Boot-Blog" target="_blank" class="inline-block w-full text-center px-4 py-2 border-2 border-terminal-text bg-transparent text-terminal-text text-sm font-bold uppercase tracking-widest hover:bg-terminal-accent hover:text-terminal-bg hover:border-terminal-accent transition-all">
+          {{ translate('projects.viewCode') }}
+        </a>
+      </div>
 
-</div>
+      <div class="bg-terminal-bg p-6 border-2 border-terminal-text hover:border-terminal-accent transition-colors flex flex-col justify-between h-full group">
+        <div>
+          <h3 class="text-xl font-bold text-terminal-text mb-2 group-hover:text-terminal-accent transition-colors">MICROSERVICES_JAVA</h3>
+          <p class="text-xs text-white mb-6 leading-relaxed">
+            {{ translate('projects.tech') }} Java, SpringBoot, Eureka
+          </p>
+        </div>
+        <a href="https://github.com/RenanCruz7/Microservico-em-Java" target="_blank" class="inline-block w-full text-center px-4 py-2 border-2 border-terminal-text bg-transparent text-terminal-text text-sm font-bold uppercase tracking-widest hover:bg-terminal-accent hover:text-terminal-bg hover:border-terminal-accent transition-all">
+          {{ translate('projects.viewCode') }}
+        </a>
+      </div>
+
+      <div class="bg-terminal-bg p-6 border-2 border-terminal-text hover:border-terminal-accent transition-colors flex flex-col justify-between h-full group">
+        <div>
+          <h3 class="text-xl font-bold text-terminal-text mb-2 group-hover:text-terminal-accent transition-colors">FOOTBALL_MANAGER_API</h3>
+          <p class="text-xs text-white mb-6 leading-relaxed">
+            {{ translate('projects.tech') }} Java, SpringBoot, MySQL
+          </p>
+        </div>
+        <a href="https://github.com/RenanCruz7/Football-Manager-API" target="_blank" class="inline-block w-full text-center px-4 py-2 border-2 border-terminal-text bg-transparent text-terminal-text text-sm font-bold uppercase tracking-widest hover:bg-terminal-accent hover:text-terminal-bg hover:border-terminal-accent transition-all">
+          {{ translate('projects.viewCode') }}
+        </a>
+      </div>
+
+      <div class="bg-terminal-bg p-6 border-2 border-terminal-text hover:border-terminal-accent transition-colors flex flex-col justify-between h-full group">
+        <div>
+          <h3 class="text-xl font-bold text-terminal-text mb-2 group-hover:text-terminal-accent transition-colors">ACCESSIBILITY_ANGULAR</h3>
+          <p class="text-xs text-white mb-6 leading-relaxed">
+            {{ translate('projects.tech') }} Angular
+          </p>
+        </div>
+        <a href="https://github.com/RenanCruz7/Acessibilidade-angular" target="_blank" class="inline-block w-full text-center px-4 py-2 border-2 border-terminal-text bg-transparent text-terminal-text text-sm font-bold uppercase tracking-widest hover:bg-terminal-accent hover:text-terminal-bg hover:border-terminal-accent transition-all">
+          {{ translate('projects.viewCode') }}
+        </a>
+      </div>
+
+      <div class="bg-terminal-bg p-6 border-2 border-terminal-text hover:border-terminal-accent transition-colors flex flex-col justify-between h-full group">
+        <div>
+          <h3 class="text-xl font-bold text-terminal-text mb-2 group-hover:text-terminal-accent transition-colors">ANGULAR_TESTING</h3>
+          <p class="text-xs text-white mb-6 leading-relaxed">
+            {{ translate('projects.tech') }} Angular, Jasmine, Karma
+          </p>
+        </div>
+        <a href="https://github.com/RenanCruz7/testes-angular" target="_blank" class="inline-block w-full text-center px-4 py-2 border-2 border-terminal-text bg-transparent text-terminal-text text-sm font-bold uppercase tracking-widest hover:bg-terminal-accent hover:text-terminal-bg hover:border-terminal-accent transition-all">
+          {{ translate('projects.viewCode') }}
+        </a>
+      </div>
+
+      <div class="bg-terminal-bg p-6 border-2 border-terminal-text hover:border-terminal-accent transition-colors flex flex-col justify-between h-full group">
+        <div>
+          <h3 class="text-xl font-bold text-terminal-text mb-2 group-hover:text-terminal-accent transition-colors">ANGULAR_RXJS</h3>
+          <p class="text-xs text-white mb-6 leading-relaxed">
+            {{ translate('projects.tech') }} Angular, Rxjs
+          </p>
+        </div>
+        <a href="https://github.com/RenanCruz7/angular-rxjs" target="_blank" class="inline-block w-full text-center px-4 py-2 border-2 border-terminal-text bg-transparent text-terminal-text text-sm font-bold uppercase tracking-widest hover:bg-terminal-accent hover:text-terminal-bg hover:border-terminal-accent transition-all">
+          {{ translate('projects.viewCode') }}
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

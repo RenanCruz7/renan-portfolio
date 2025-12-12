@@ -2,8 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
 
 body {
-  @apply font-montserrat bg-primary;
+  @apply font-mono bg-terminal-bg text-terminal-text;
+}
+
+::selection {
+  @apply bg-terminal-accent text-terminal-bg;
+}
+
+html {
+  scroll-behavior: smooth;
 }

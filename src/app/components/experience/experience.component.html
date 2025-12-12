@@ -1,19 +1,35 @@
-<h2 class="exp-text">Experience</h2>
-<div id="exp" class="timeline">
-    <div class="entries">
-        <div class="entry">
-            <div class="title">2023</div>
-            <div class="body">
-                <p>Started ate Servimex Logistica as a intern working with Python, Flask, PHP and SQL Server to create and reformulate the Servimex Online Website</p>
-            </div>
+<section id="experience" class="py-24 px-6 bg-terminal-bg text-terminal-text border-y-2 border-terminal-text">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-2xl font-extrabold mb-16 text-center text-terminal-accent uppercase tracking-tight">{{ translate('experience.title') }}</h2>
+    <div class="relative">
+      <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-terminal-accent"></div>
+      
+      <div class="mb-12 flex justify-between items-start w-full flex-row-reverse md:flex-row text-sm">
+        <div class="w-5/12 text-left md:text-right pr-0 pl-8 md:pl-0 md:pr-10 border-r-2 border-terminal-text md:border-r-0 md:border-l-2">
+          <h3 class="mb-1 font-bold text-xl text-terminal-text">2023</h3>
+          <p class="text-terminal-text leading-relaxed">
+            {{ translate('experience.2023.role') }}<br/>
+            {{ translate('experience.2023.tasks') }}
+          </p>
         </div>
-        <div class="entry">
-            <div class="title">2024</div>
-            <div class="body">
-                <p>I got promoted and started working on board goals using Python, Flask and SQL Server</p>
-                <p>*Container Tracking Project Completed</p>
-                <p>*Siscomex Debt Forecast - In Progress</p>
-            </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center bg-terminal-bg w-4 h-4 rounded-full border-2 border-terminal-accent z-20"></div>
+        <div class="w-5/12"></div>
+      </div>
+      
+      <div class="mb-12 flex justify-between items-start w-full text-sm">
+        <div class="w-5/12"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center bg-terminal-bg w-4 h-4 rounded-full border-2 border-terminal-accent z-20"></div>
+        <div class="w-5/12 pl-8 md:pl-10 border-l-2 border-terminal-text md:border-l-0 md:border-r-2">
+          <h3 class="mb-1 font-bold text-xl text-terminal-text">2024</h3>
+          <p class="text-terminal-text leading-relaxed">
+            {{ translate('experience.2024.promotion') }}<br/>
+            {{ translate('experience.2024.tools') }}<br/>
+            {{ translate('experience.2024.projects') }}<br/>
+            {{ translate('experience.2024.project1') }}<br/>
+            {{ translate('experience.2024.project2') }}
+          </p>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>

@@ -6,11 +6,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#d1dede',
-        secondary: '#48304d',
+        'terminal-bg': '#000000',
+        'terminal-text': '#FFFFFF',
+        'terminal-accent': '#FF4500',
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'monospace'],
+      },
+      borderRadius: {
+        none: '0',
+      },
+      borderWidth: {
+        '2': '2px',
+        '4': '4px',
       },
     },
   },

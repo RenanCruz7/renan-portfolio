@@ -1,4 +1,6 @@
-import { Component, signal, computed } from '@angular/core';
+import { Component, signal, computed, inject } from '@angular/core';
+import { TranslationService } from '../../services/translation.service';
+import { CommonModule } from '@angular/common';
 
 interface Skill {
   category: string;
@@ -8,10 +10,11 @@ interface Skill {
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './about-me.component.html'
 })
 export class AboutMeComponent {
+  translationService = inject(TranslationService);
   description = signal('I\'m a Full Stack Web Developer passionate about building and maintaining both the front-end and back-end of websites and web applications, ensuring the success and smooth functioning of the entire product.');
   
   skills = signal<Skill[]>([
@@ -23,4 +26,8 @@ export class AboutMeComponent {
   resumeUrl = signal('https://drive.usercontent.google.com/u/0/uc?id=1M-zr29R5NAdRkpmLJesRIXQT-3H-nWWH&export=download');
   
   skillsCount = computed(() => this.skills().length);
+
+  translate(key: string): string {
+    return this.translationService.translate(key);
+  }
 }
