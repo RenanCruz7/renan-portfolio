@@ -62,32 +62,20 @@ export class TranslationService {
     // Experience
     'experience.title': { en: '> EXPERIENCE_LOG', pt: '> LOG_EXPERIÊNCIA' },
     'experience.2023.role': { 
-      en: '// ROLE: Intern, Servimex Logística.', 
-      pt: '// FUNÇÃO: Estagiário, Servimex Logística.' 
+      en: '// ROLE: Intern at Servimex Logística', 
+      pt: '// CARGO: Estagiário na Servimex Logística' 
     },
     'experience.2023.tasks': { 
-      en: '// TASKS: Python, Flask, PHP, SQL Server for Servimex Online Website development/refactoring.', 
-      pt: '// TAREFAS: Python, Flask, PHP, SQL Server para desenvolvimento/refatoração do Site Servimex Online.' 
+      en: '// TASKS: Developed and refactored Servimex Online Website using Python, Flask, PHP and SQL Server', 
+      pt: '// TAREFAS: Desenvolvimento e refatoração do Website Servimex Online usando Python, Flask, PHP e SQL Server' 
     },
     'experience.2024.promotion': { 
-      en: '// PROMOTION: Advanced to board goals.', 
-      pt: '// PROMOÇÃO: Avançado para metas da diretoria.' 
+      en: '// PROMOTION: Promoted to work on board-level strategic goals', 
+      pt: '// PROMOÇÃO: Promovido para trabalhar em metas estratégicas da diretoria' 
     },
-    'experience.2024.tools': { 
-      en: '// TOOLS: Python, Flask, SQL Server.', 
-      pt: '// FERRAMENTAS: Python, Flask, SQL Server.' 
-    },
-    'experience.2024.projects': { 
-      en: '// PROJECTS:', 
-      pt: '// PROJETOS:' 
-    },
-    'experience.2024.project1': { 
-      en: '* Container Tracking Project [COMPLETED]', 
-      pt: '* Projeto de Rastreamento de Contêineres [CONCLUÍDO]' 
-    },
-    'experience.2024.project2': { 
-      en: '* Siscomex Debt Forecast [IN_PROGRESS]', 
-      pt: '* Previsão de Dívidas Siscomex [EM_PROGRESSO]' 
+    'experience.2024.description': { 
+      en: '// RESPONSIBILITIES: Development of automations using Python, Flask, Celery and Selenium to meet operational needs. Implementation of debt forecast automation, reducing payment delays and improving customer relationships. Development of container tracking automation, optimizing real-time monitoring and streamlining operational processes.', 
+      pt: '// RESPONSABILIDADES: Desenvolvimento de automações utilizando Python, Flask, Celery e Selenium para atender às necessidades da operação. Implementação de automação para previsão de débitos, reduzindo atrasos nos pagamentos e melhorando o relacionamento com os clientes. Desenvolvimento de automação para tracking de containers, otimizando o monitoramento em tempo real e agilizando processos operacionais.' 
     },
     
     // Projects
@@ -101,8 +89,8 @@ export class TranslationService {
       pt: '// STATUS: Construindo a web com precisão e paixão.' 
     },
     'footer.copyright': { 
-      en: '// LOG_ENTRY: © 2024 Renan Cruz. All rights reserved.', 
-      pt: '// LOG_ENTRADA: © 2024 Renan Cruz. Todos os direitos reservados.' 
+      en: '// LOG_ENTRY: © 2025 Renan Cruz. All rights reserved.', 
+      pt: '// LOG_ENTRADA: © 2025 Renan Cruz. Todos os direitos reservados.' 
     },
     
     // Common

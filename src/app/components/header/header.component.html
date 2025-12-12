@@ -39,6 +39,29 @@
       </div>
     </div>
   </div>
+
+  @if (isMenuOpen()) {
+    <div class="md:hidden bg-terminal-bg border-t-2 border-terminal-text">
+      <div class="px-4 py-3 space-y-3">
+        <a (click)="scrollToSection('home'); toggleMenu()" 
+           class="block text-terminal-text hover:text-terminal-accent font-medium text-sm uppercase tracking-widest cursor-pointer py-2 border-b border-terminal-text">
+          {{ translate('nav.home') }}
+        </a>
+        <a (click)="scrollToSection('about-me'); toggleMenu()" 
+           class="block text-terminal-text hover:text-terminal-accent font-medium text-sm uppercase tracking-widest cursor-pointer py-2 border-b border-terminal-text">
+          {{ translate('nav.about') }}
+        </a>
+        <a (click)="scrollToSection('experience'); toggleMenu()" 
+           class="block text-terminal-text hover:text-terminal-accent font-medium text-sm uppercase tracking-widest cursor-pointer py-2 border-b border-terminal-text">
+          {{ translate('nav.experience') }}
+        </a>
+        <a (click)="scrollToSection('projects'); toggleMenu()" 
+           class="block text-terminal-text hover:text-terminal-accent font-medium text-sm uppercase tracking-widest cursor-pointer py-2">
+          {{ translate('nav.projects') }}
+        </a>
+      </div>
+    </div>
+  }
 </nav>
 
 <div class="fixed left-0 top-1/2 transform -translate-y-1/2 z-40 hidden lg:flex flex-col gap-0 border-2 border-terminal-text bg-terminal-bg">
