@@ -1,100 +1,16 @@
-@import '../../../assets/styles/global.scss';
-
-.home{
-    display: flex;
-    justify-content: center; // Centraliza horizontalmente
-    align-items: center; // Centraliza verticalmente
-    flex-direction: column;
-    background-color: $secundary;
-    height: 700px;
-
-    // Media query para telas menores (ex: tablets)
-    @media (max-width: 768px) {
-        flex-direction: column; // Muda a direção do flex para coluna para melhor acomodar o espaço vertical
-        height: auto; // Ajusta a altura para auto para acomodar o conteúdo
-        padding: 20px; // Adiciona um pouco de padding para não ficar muito apertado
-    }
-}
-
-.main-text {
-    background-color: inherit;
-    color: $primary;
-    font-size: 3.5rem;
-    white-space: nowrap; // Mantém o texto em uma única linha
-    overflow: hidden; // Evita que o conteúdo "escape" antes da animação começar
-    border-right: 2px solid $primary; // Simula o cursor
-    width: 0; // Inicia com largura 0
-    max-width: 100%; // Garante que o texto não ultrapasse o contêiner
-    animation: typing 3s steps(40, end) forwards, blink-caret .75s step-end infinite; // Aplica as animações
-
-    // Media query para telas menores (ex: tablets)
-    @media (max-width: 768px) {
-        font-size: 3rem; // Diminui a fonte para se adequar a telas menores
-    }
-
-    // Media query para telas muito pequenas (ex: celulares)
-    @media (max-width: 480px) {
-        font-size: 1.5rem; // Diminui ainda mais a fonte para se adequar a telas de celulares
-    }
-}
-// Animação de digitação
+// Animação de digitação com Tailwind
 @keyframes typing {
     from { width: 0; }
-    to { width: 18em; } // Ajuste este valor para corresponder à largura do texto
+    to { width: 18em; }
 }
 
-// Animação do cursor piscando
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: $primary; }
+    50% { border-color: theme('colors.primary'); }
 }
 
-.secundary-text{
-    color: $primary;
-    background-color: inherit;
-    margin-top: 40px;
-    font-size: 1.2rem;
-}
-
-
-.socials {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: $secundary;
-    display: flex; 
-    flex-direction: column; 
-
-    .social-icon-link {
-        display: inline-block;
-        background-color: inherit;
-        padding: 10px;
-        border: 2px solid $primary;
-        
-
-        .social-icon {
-            background-color: $secundary;
-            width: 40px; 
-            height: 40px; 
-        }
-
-        .github-icon,
-        .linkedin-icon {
-            width: 40px; 
-            height: 40px;
-        }
-    }
-}
-.social-icon {
-    // Ajuste o tamanho do ícone para telas menores
-    @media (max-width: 768px) {
-        font-size: 24px; // Diminui o tamanho do ícone para tablets
-    }
-
-    @media (max-width: 480px) {
-        font-size: 20px; // Diminui ainda mais para celulares
-    }
+.animate-typing {
+    animation: typing 3s steps(40, end) forwards, blink-caret .75s step-end infinite;
 }
 
 

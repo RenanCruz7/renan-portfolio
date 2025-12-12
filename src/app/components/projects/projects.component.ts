@@ -13,8 +13,7 @@ interface Project {
   selector: 'app-projects',
   standalone: true,
   imports: [],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  templateUrl: './projects.component.html'
 })
 export class ProjectsComponent {
   projects = signal<Project[]>([]);

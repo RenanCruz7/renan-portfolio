@@ -9,8 +9,7 @@ interface Skill {
   selector: 'app-about-me',
   standalone: true,
   imports: [],
-  templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  templateUrl: './about-me.component.html'
 })
 export class AboutMeComponent {
   description = signal('I\'m a Full Stack Web Developer passionate about building and maintaining both the front-end and back-end of websites and web applications, ensuring the success and smooth functioning of the entire product.');
